@@ -1,0 +1,22 @@
+
+class Solution{
+    public:
+    void segregateElements(int arr[],int n)
+    {
+        int i,front=0,back=n-1;
+        for(i=0;i<n;i++)
+        {
+           if(arr[i]>=0)
+           {
+               arr[front]=arr[i];
+               front++;
+           }
+           else{
+               arr[back]=arr[i];
+               back--;
+           }
+        }
+        return arr;
+    }
+};
+
